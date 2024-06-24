@@ -1,0 +1,34 @@
+.listview {
+}
+.list {
+  display: flex;
+  gap: 20px;
+  padding: 10px 30px;
+}
+#list-img {
+  height: 200px;
+  width: 300px;
+}
+.list-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: poppins;
+  align-content: center;
+  justify-content: center;
+}
+@media (max-width: 426px) {
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+  #list-img {
+    height: 100px;
+    width: 250px;
+  }
+  .list-detail {
+    display: flex;
+  }
+}

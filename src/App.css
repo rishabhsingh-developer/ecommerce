@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+.map {
+  text-align: center;
+}
+h1 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px;
+}
+input {
+  height: 35px;
+  width: 600px;
+  padding: 10px;
+}
+textarea {
+  height: 100px;
+  width: 600px;
+  padding: 10px;
+}
+#submit {
+  background-color: rgb(82, 82, 163);
+  color: white;
+}
+
+@media (max-width: 769px) {
+  iframe {
+    height: 300px;
+    width: 600px;
+  }
+}
+@media (max-width: 426px) {
+  iframe {
+    height: 200px;
+    width: 300px;
+  }
+  input {
+    height: 35px;
+    width: 300px;
+    padding: 10px;
+  }
+  textarea {
+    height: 100px;
+    width: 300px;
+    padding: 10px;
+  }
+}
+
+/* css for Error page */
+
+.error {
+  text-align: center;
+}
+.error > h1 {
+  font-size: 150px;
+}
+
+/* css for singlepage */
+
+.singleproduct {
+  display: flex;
+  justify-content: center;
+}
+.productimage {
+  width: 40%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productdetail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 40%;
+}
+.product-emoji {
+  display: flex;
+  gap: 10px;
+  font-size: 10px;
+}
+#emoji-icon {
+  font-size: 20px;
+}
+p {
+  font-size: 5px;
+}
+.emoji1,
+.emoji2,
+.emoji3,
+.emoji4 {
+  text-align: center;
+}
+.emoji1 > p {
+  font-size: 10px;
+}
+.emoji2 > p {
+  font-size: 10px;
+}
+.emoji3 > p {
+  font-size: 10px;
+}
+.emoji4 > p {
+  font-size: 10px;
+}
+.btn-color {
+  height: 20px;
+  width: 20px;
+  border-radius: 25px;
+}
+.color {
+  display: flex;
+  gap: 5px;
+}
+
+.btn-color {
+  opacity: 0.3;
+}
+.active {
+  opacity: 5;
+}
+.count {
+  display: flex;
+  gap: 20px;
+}
+.count > button {
+  height: 20px;
+  width: 25px;
+  background-color: green;
+}
