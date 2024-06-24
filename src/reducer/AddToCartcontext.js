@@ -72,19 +72,21 @@ export default function reducer(state, action) {
       };
 
     case "totalamount":
-      let total = action.payload;
-      console.log(total);
+      
+  let total_price = state.cart.reduce((initialVal, curElem) => {
+      let { price, amount } = curElem;
 
-      let totalcash = 0;
-      total.map((i) => {
-        totalcash = totalcash + i.price * i.count;
-        return totalcash;
-      });
-      console.log(totalcash);
-      return {
-        ...state,
-        totalamout: totalcash,
-      };
+      initialVal = initialVal + price * amount;
+
+      return initialVal;
+    }, 0);
+
+  return {
+     ...state,
+    totalamout: total_price,
+    };
+  
+   
     case "carttotalitem":
       let rish = action.payload;
 
